@@ -5,6 +5,11 @@ const questions = [
     answer: 1,
   },
   {
+    question: "Factorize \\( 3x^2 + 17x - 28 \\)?",
+    options: ["(2x+1)(3x-1)", "(3x-4)(x+7)", "(3x+7)(x-4)", "(3x+2)(10x+1)"],
+    answer: 1,
+  },
+  {
     question: "Factorize \\( x^4y + 27xy \\)",
     options: [
       "\\( xy(x+3)(x^3 - 3x + 9) \\)",

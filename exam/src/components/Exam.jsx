@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { MathJax } from 'better-react-mathjax';
 import questions from '../questions';
+import './Exam.css';
 
 const Exam = () => {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
@@ -8,25 +10,36 @@ const Exam = () => {
   const navigate = useNavigate();
 
   const handleAnswer = (answerIndex) => {
-    setUserAnswers([...userAnswers, answerIndex]);
+    const updatedUserAnswers = [...userAnswers];
+    updatedUserAnswers[currentQuestionIndex] = answerIndex;
+    setUserAnswers(updatedUserAnswers);
+
     const nextQuestionIndex = currentQuestionIndex + 1;
     if (nextQuestionIndex < questions.length) {
       setCurrentQuestionIndex(nextQuestionIndex);
     } else {
-      navigate('/result', { state: { userAnswers } });
+      navigate('/result', { state: { userAnswers: updatedUserAnswers } });
     }
   };
 
   const question = questions[currentQuestionIndex];
 
   return (
-    <div>
+    <div className="exam-container">
       <h2>Question {currentQuestionIndex + 1} of {questions.length}</h2>
-      <p>{question.question}</p>
-      <ul>
+      <div className="question">
+        <MathJax>
+          <div>{question.question}</div>
+        </MathJax>
+      </div>
+      <ul className="options">
         {question.options.map((option, index) => (
           <li key={index}>
-            <button onClick={() => handleAnswer(index)}>{option}</button>
+            <MathJax>
+              <button onClick={() => handleAnswer(index)}>
+                {option}
+              </button>
+            </MathJax>
           </li>
         ))}
       </ul>

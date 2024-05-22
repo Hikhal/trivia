@@ -1,17 +1,28 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Exam from './components/Exam';
 import Result from './components/Result';
+import { MathJaxContext } from 'better-react-mathjax';
+
+const config = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']],
+    displayMath: [['$$', '$$'], ['\\[', '\\]']]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
 
 const App = () => (
-  <Router>
-    <div>
+  <MathJaxContext config={config}>
+    <BrowserRouter>
       <Routes>
-        <Route path="/" element = {<Exam/>} />
-        <Route path="/result" element = {<Result/>}/>
+        <Route path="/" element={<Exam />} />
+        <Route path="/result" element={<Result />} />
       </Routes>
-    </div>
-  </Router>
+    </BrowserRouter>
+  </MathJaxContext>
 );
 
 export default App;

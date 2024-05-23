@@ -129,10 +129,10 @@ const questions = [
     options: [
       "\\( \\frac{2 + 7y^2}{y^2 + 4} \\)",
       "\\( \\frac{2y^2 + 7y^3}{y^2 + 3} \\)",
-      "\\( \\frac{2 + 7y^2}{y^2 + 3} \\)",
+      "\\( \\frac{2 + 7y^2}{y^5 + 3} \\)",
       "\\( \\frac{2y^2 + 7y^3}{y + 3} \\)",
     ],
-    answer:2,
+    answer:0,
   },
   {
     question:
@@ -148,7 +148,7 @@ const questions = [
 
   {
     question:
-      "Simplify \\( \\frac{3x^2 - 10x + 8}{2x^2 +3x - 14} - \\frac{18x}{24 - 18x} \\)",
+      "Simplify \\( \\frac{3x^2 - 10x + 8}{2x^2 +3x - 14} * \\frac{18x}{24 - 18x} \\)",
     options: [
       "\\( \\frac{14x - 2}{(3x + 4)} \\)",
       "\\( \\frac{2x - 3}{(x - 3)} \\)",

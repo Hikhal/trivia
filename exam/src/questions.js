@@ -127,16 +127,16 @@ const questions = [
   {
     question: "Simplify \\( \\frac{\\frac{2}{y} + 7y}{y + \\frac{3}{y}} \\)",
     options: [
-      "\\( \\frac{2 + 7y^2}{y^2 + 3} \\)",
+      "\\( \\frac{2 + 7y^2}{y^2 + 4} \\)",
       "\\( \\frac{2y^2 + 7y^3}{y^2 + 3} \\)",
       "\\( \\frac{2 + 7y^2}{y^2 + 3} \\)",
       "\\( \\frac{2y^2 + 7y^3}{y + 3} \\)",
     ],
-    answer: 1,
+    answer:2,
   },
   {
     question:
-      "Simplify \\( \\frac{28x^3}{3x^2 - 16x - 12} - \\frac{6 - x}{7x^4} \\)",
+      "Simplify \\( \\frac{28x^3}{3x^2 - 16x - 12} * \\frac{6 - x}{7x^4} \\)",
     options: [
       "\\( \\frac{3x^2 - 14x - 2}{(3x - 2)(3x + 4)(x - 3)} \\)",
       "\\( \\frac{2x - 3}{(3x - 2)(x - 3)} \\)",
@@ -163,30 +163,30 @@ const questions = [
     options: [
       "\\( \\frac{5 + 6z^2}{z^2 + 4} \\)",
       "\\( \\frac{5z^2 + 6z^3}{z^2 + 4} \\)",
-      "\\( \\frac{5 + 6z^2}{z^2 + 4} \\)",
+      "\\( \\frac{5 + 6z^2}{z^8 + 4} \\)",
       "\\( \\frac{5z^2 + 6z^3}{z + 4} \\)",
     ],
-    answer: 1,
+    answer: 0,
   },
   {
     question: "Simplify \\( \\frac{\\frac{4}{a} + 8a}{a + \\frac{6}{a}} \\)",
     options: [
       "\\( \\frac{4 + 8a^2}{a^2 + 6} \\)",
       "\\( \\frac{4a^2 + 8a^3}{a^2 + 6} \\)",
-      "\\( \\frac{4 + 8a^2}{a^2 + 6} \\)",
+      "\\( \\frac{4 + 8a^2}{a^9 + 6} \\)",
       "\\( \\frac{4a^2 + 8a^3}{a + 6} \\)",
     ],
-    answer: 1,
+    answer: 0,
   },
   {
     question: "Simplify \\( \\frac{\\frac{6}{b} + 9b}{b + \\frac{2}{b}} \\)",
     options: [
       "\\( \\frac{6 + 9b^2}{b^2 + 2} \\)",
       "\\( \\frac{6b^2 + 9b^3}{b^2 + 2} \\)",
-      "\\( \\frac{6 + 9b^2}{b^2 + 2} \\)",
+      "\\( \\frac{6 + 9b^2}{b^3 + 2} \\)",
       "\\( \\frac{6b^2 + 9b^3}{b + 2} \\)",
     ],
-    answer: 1,
+    answer: 0,
   },
 
   {
@@ -202,14 +202,14 @@ const questions = [
 
   {
     question:
-      "Simplify \\( \\frac{3r - 9}{12r^2 + 24r} - \\frac{6r + 12}{6r - 18} \\)",
+      "Simplify \\( \\frac{3r - 9}{12r^2 + 24r} * \\frac{6r + 12}{6r - 18} \\)",
     options: [
       "\\( \\frac{1}{(4r)} \\)",
       "\\( \\frac{4r}{r^4} \\)",
       "\\( \\frac{-4}{4(2r + 2)} \\)",
       "\\( \\frac{3r - 2}{(r)} \\)",
     ],
-    answer: 2,
+    answer: 0,
   },
 ];
 

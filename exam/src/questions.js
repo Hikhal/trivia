@@ -123,94 +123,180 @@
 //   }
 
 // ];
+// const questions = [
+  // {
+  //   question: "Simplify \\( \\frac{\\frac{2}{y} + 7y}{y + \\frac{3}{y}} \\)",
+  //   options: [
+  //     "\\( \\frac{2 + 7y^2}{y^2 + 4} \\)",
+  //     "\\( \\frac{2y^2 + 7y^3}{y^2 + 3} \\)",
+  //     "\\( \\frac{2 + 7y^2}{y^5 + 3} \\)",
+  //     "\\( \\frac{2y^2 + 7y^3}{y + 3} \\)",
+  //   ],
+  //   answer:0,
+  // },
+  // {
+  //   question:
+  //     "Simplify \\( \\frac{28x^3}{3x^2 - 16x - 12} * \\frac{6 - x}{7x^4} \\)",
+  //   options: [
+  //     "\\( \\frac{3x^2 - 14x - 2}{(3x - 2)(3x + 4)(x - 3)} \\)",
+  //     "\\( \\frac{2x - 3}{(3x - 2)(x - 3)} \\)",
+  //     "\\( \\frac{-4}{x(3x + 2)} \\)",
+  //     "\\( \\frac{3x - 2}{(x - 3)(3x^2 - 11x + 6)} \\)",
+  //   ],
+  //   answer: 2,
+  // },
+
+  // {
+  //   question:
+  //     "Simplify \\( \\frac{3x^2 - 10x + 8}{2x^2 +3x - 14} * \\frac{18x}{24 - 18x} \\)",
+  //   options: [
+  //     "\\( \\frac{14x - 2}{(3x + 4)} \\)",
+  //     "\\( \\frac{2x - 3}{(x - 3)} \\)",
+  //     "\\( \\frac{-4}{x(3x + 2)} \\)",
+  //     "\\( \\frac{-3x}{(2x + 7)} \\)",
+  //   ],
+  //   answer: 2,
+  // },
+
+  // {
+  //   question: "Simplify \\( \\frac{\\frac{5}{z} + 6z}{z + \\frac{4}{z}} \\)",
+  //   options: [
+  //     "\\( \\frac{5 + 6z^2}{z^2 + 4} \\)",
+  //     "\\( \\frac{5z^2 + 6z^3}{z^2 + 4} \\)",
+  //     "\\( \\frac{5 + 6z^2}{z^8 + 4} \\)",
+  //     "\\( \\frac{5z^2 + 6z^3}{z + 4} \\)",
+  //   ],
+  //   answer: 0,
+  // },
+  // {
+  //   question: "Simplify \\( \\frac{\\frac{4}{a} + 8a}{a + \\frac{6}{a}} \\)",
+  //   options: [
+  //     "\\( \\frac{4 + 8a^2}{a^2 + 6} \\)",
+  //     "\\( \\frac{4a^2 + 8a^3}{a^2 + 6} \\)",
+  //     "\\( \\frac{4 + 8a^2}{a^9 + 6} \\)",
+  //     "\\( \\frac{4a^2 + 8a^3}{a + 6} \\)",
+  //   ],
+  //   answer: 0,
+  // },
+  // {
+  //   question: "Simplify \\( \\frac{\\frac{6}{b} + 9b}{b + \\frac{2}{b}} \\)",
+  //   options: [
+  //     "\\( \\frac{6 + 9b^2}{b^2 + 2} \\)",
+  //     "\\( \\frac{6b^2 + 9b^3}{b^2 + 2} \\)",
+  //     "\\( \\frac{6 + 9b^2}{b^3 + 2} \\)",
+  //     "\\( \\frac{6b^2 + 9b^3}{b + 2} \\)",
+  //   ],
+  //   answer: 0,
+  // },
+
+  // {
+  //   question: "Simplify \\( \\frac{3x-1}{2x-5} - \\frac{4x+2}{5-2x} \\)",
+  //   options: [
+  //     "\\( \\frac{3x^2 }{(3x - 2)} \\)",
+  //     "\\( \\frac{2x - 3}{(x - 3)} \\)",
+  //     "\\( \\frac{7x+1}{(2x - 5)} \\)",
+  //     "\\( \\frac{3x - 2}{(x - 3)(3x + 2)} \\)",
+  //   ],
+  //   answer: 2,
+  // },
+
+  // {
+  //   question:
+  //     "Simplify \\( \\frac{3r - 9}{12r^2 + 24r} * \\frac{6r + 12}{6r - 18} \\)",
+  //   options: [
+  //     "\\( \\frac{1}{(4r)} \\)",
+  //     "\\( \\frac{4r}{r^4} \\)",
+  //     "\\( \\frac{-4}{4(2r + 2)} \\)",
+  //     "\\( \\frac{3r - 2}{(r)} \\)",
+  //   ],
+  //   answer: 0,
+  // },
+// ];
+
 const questions = [
   {
-    question: "Simplify \\( \\frac{\\frac{2}{y} + 7y}{y + \\frac{3}{y}} \\)",
+    question: "Simplify \\( \\sqrt{72x^3y^5} \\)",
     options: [
-      "\\( \\frac{2 + 7y^2}{y^2 + 4} \\)",
-      "\\( \\frac{2y^2 + 7y^3}{y^2 + 3} \\)",
-      "\\( \\frac{2 + 7y^2}{y^5 + 3} \\)",
-      "\\( \\frac{2y^2 + 7y^3}{y + 3} \\)",
+      "\\( 6x \\sqrt{2xy^5} \\)",
+      "\\( 6xy^2 \\sqrt{2xy} \\)",
+      "\\( 6xy \\sqrt{2xy^3} \\)",
+      "\\( 6x \\sqrt{2x^2y^5} \\)"
     ],
-    answer:0,
+    answer: 1 // The correct answer is \\( 6xy^2 \\sqrt{2xy} \\)
   },
   {
-    question:
-      "Simplify \\( \\frac{28x^3}{3x^2 - 16x - 12} * \\frac{6 - x}{7x^4} \\)",
+    question: "Simplify \\( \\sqrt[3]{108a^2b^7} \\)",
     options: [
-      "\\( \\frac{3x^2 - 14x - 2}{(3x - 2)(3x + 4)(x - 3)} \\)",
-      "\\( \\frac{2x - 3}{(3x - 2)(x - 3)} \\)",
-      "\\( \\frac{-4}{x(3x + 2)} \\)",
-      "\\( \\frac{3x - 2}{(x - 3)(3x^2 - 11x + 6)} \\)",
+      "\\( 3a^2b^2 \\sqrt[3]{4ab} \\)",
+      "\\( 6ab^3 \\sqrt[3]{3b} \\)",
+      "\\( 3ab^2 \\sqrt[3]{4a^2b} \\)",
+      "\\( 6a \\sqrt[3]{3a^2b^7} \\)"
     ],
-    answer: 2,
-  },
-
-  {
-    question:
-      "Simplify \\( \\frac{3x^2 - 10x + 8}{2x^2 +3x - 14} * \\frac{18x}{24 - 18x} \\)",
-    options: [
-      "\\( \\frac{14x - 2}{(3x + 4)} \\)",
-      "\\( \\frac{2x - 3}{(x - 3)} \\)",
-      "\\( \\frac{-4}{x(3x + 2)} \\)",
-      "\\( \\frac{-3x}{(2x + 7)} \\)",
-    ],
-    answer: 3,
-  },
-
-  {
-    question: "Simplify \\( \\frac{\\frac{5}{z} + 6z}{z + \\frac{4}{z}} \\)",
-    options: [
-      "\\( \\frac{5 + 6z^2}{z^2 + 4} \\)",
-      "\\( \\frac{5z^2 + 6z^3}{z^2 + 4} \\)",
-      "\\( \\frac{5 + 6z^2}{z^8 + 4} \\)",
-      "\\( \\frac{5z^2 + 6z^3}{z + 4} \\)",
-    ],
-    answer: 0,
+    answer: 0 // The correct answer is \\( 3a^2b^2 \\sqrt[3]{4ab} \\)
   },
   {
-    question: "Simplify \\( \\frac{\\frac{4}{a} + 8a}{a + \\frac{6}{a}} \\)",
+    question: "Simplify \\( \\sqrt[4]{200k^5m^3} \\)",
     options: [
-      "\\( \\frac{4 + 8a^2}{a^2 + 6} \\)",
-      "\\( \\frac{4a^2 + 8a^3}{a^2 + 6} \\)",
-      "\\( \\frac{4 + 8a^2}{a^9 + 6} \\)",
-      "\\( \\frac{4a^2 + 8a^3}{a + 6} \\)",
+      "\\( 2k \\sqrt[4]{50k^4m^3} \\)",
+      "\\( k^2m \\sqrt[4]{2k^4m} \\)",
+      "\\( 3k^2m \\sqrt[4]{2km} \\)",
+      "\\( 2k^2m \\sqrt[4]{12km} \\)"
     ],
-    answer: 0,
+    answer: 1 // The correct answer is \\( k^2m \\sqrt[4]{2k^4m} \\)
   },
   {
-    question: "Simplify \\( \\frac{\\frac{6}{b} + 9b}{b + \\frac{2}{b}} \\)",
+    question: "Simplify \\( \\sqrt[5]{180p^4q^6} \\)",
     options: [
-      "\\( \\frac{6 + 9b^2}{b^2 + 2} \\)",
-      "\\( \\frac{6b^2 + 9b^3}{b^2 + 2} \\)",
-      "\\( \\frac{6 + 9b^2}{b^3 + 2} \\)",
-      "\\( \\frac{6b^2 + 9b^3}{b + 2} \\)",
+      "\\( pq \\sqrt[5]{36p^4q^6} \\)",
+      "\\( p^2q \\sqrt[5]{36pq} \\)",
+      "\\( 3pq \\sqrt[5]{4p^3q^4} \\)",
+      "\\( p^2q \\sqrt[5]{36p^2q^2} \\)"
     ],
-    answer: 0,
+    answer: 3 // The correct answer is \\( p^2q \\sqrt[5]{36p^2q^2} \\)
   },
-
   {
-    question: "Simplify \\( \\frac{3x-1}{2x-5} - \\frac{4x+2}{5-2x} \\)",
+    question: "Simplify \\( \\sqrt[6]{50x^6y^2} \\)",
     options: [
-      "\\( \\frac{3x^2 }{(3x - 2)} \\)",
-      "\\( \\frac{2x - 3}{(x - 3)} \\)",
-      "\\( \\frac{7x+1}{(2x - 5)} \\)",
-      "\\( \\frac{3x - 2}{(x - 3)(3x + 2)} \\)",
+      "\\( xy \\sqrt[6]{50x^5y} \\)",
+      "\\( 5xy \\sqrt[6]{2x^5y} \\)",
+      "\\( 2x^3y \\sqrt[6]{5} \\)",
+      "\\( 5x \\sqrt[6]{2x^6y^2} \\)"
     ],
-    answer: 2,
+    answer: 2 // The correct answer is \\( 2x^3y \\sqrt[6]{5} \\)
   },
-
   {
-    question:
-      "Simplify \\( \\frac{3r - 9}{12r^2 + 24r} * \\frac{6r + 12}{6r - 18} \\)",
+    question: "Simplify \\( \\sqrt{80m^5n^4} \\)",
     options: [
-      "\\( \\frac{1}{(4r)} \\)",
-      "\\( \\frac{4r}{r^4} \\)",
-      "\\( \\frac{-4}{4(2r + 2)} \\)",
-      "\\( \\frac{3r - 2}{(r)} \\)",
+      "\\( 4mn^2 \\sqrt{5m^3} \\)",
+      "\\( 4m^2n^2 \\sqrt{5m} \\)",
+      "\\( 4m^2n \\sqrt{5mn^3} \\)",
+      "\\( 4mn \\sqrt{5m^4n^2} \\)"
     ],
-    answer: 0,
+    answer: 1 // The correct answer is \\( 4m^2n^2 \\sqrt{5m} \\)
   },
+  {
+    question: "Simplify \\( \\sqrt[3]{245r^7s^2} \\)",
+    options: [
+      "\\( 5r^2s \\sqrt[3]{49rs} \\)",
+      "\\( 7r^2s \\sqrt[3]{5rs} \\)",
+      "\\( 7r^3s \\sqrt[3]{5r} \\)",
+      "\\( 7r^2s \\sqrt[3]{5r^3s^2} \\)"
+    ],
+    answer: 1 // The correct answer is \\( 7r^2s \\sqrt[3]{5rs} \\)
+  },
+  {
+    question: "Simplify \\( \\sqrt[4]{180u^4v^6} \\)",
+    options: [
+      "\\( uv \\sqrt[4]{180u^3v^2} \\)",
+      "\\( uv^2 \\sqrt[4]{180uv^4} \\)",
+      "\\( u^2v \\sqrt[4]{45v^2} \\)",
+      "\\( u^2v \\sqrt[4]{45u^2v^2} \\)"
+    ],
+    answer: 3 // The correct answer is \\( u^2v \\sqrt[4]{45v^2} \\)
+  }
 ];
+
+
+
 
 export default questions;

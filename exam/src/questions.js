@@ -215,24 +215,24 @@
 
 const questions = [
   {
-    question: "Simplify \\( \\sqrt[3]{54n^5} - \\sqrt[3]{16n^5} \\)",
+    question: "Simplify \\( (\\sqrt{5} + 3) * (\\sqrt{5} - 2) \\)",
     options: [
-      "\\( 6n \\sqrt[3]{3n^4} \\)",
-      "\\( 6n \\sqrt[3]{3n^4} \\)",
-      "\\( n \\sqrt[3]{2n^2} \\)",
-      "\\( n \\sqrt[3]{2n^4} \\)",
+      "\\( -1 +  \\sqrt{5} \\)",
+      "\\( 1 +  \\sqrt{6} \\)",
+      "\\( 2 +  \\sqrt{3} \\)",
+      "\\( 4 +  \\sqrt{8} \\)",
     ],
-    answer: 2, 
+    answer: 0,
   },
   {
-    question: "Simplify \\( \\sqrt[3]{9} * (4 - \\sqrt[3]{8}) \\)",
+    question: "Simplify \\( \\frac{\\sqrt[6]{192y^8z^{13}}}{\\sqrt[6]{3yz^{11}}} \\)",
     options: [
-      "\\( 12 \\sqrt[3]{9} \\)",
-      "\\( -4\\sqrt[3]{9} \\)",
-      "\\( 4 \\sqrt[3]{9} \\)",
-      "\\( 2 \\sqrt[3]{9} \\)",
+      "\\( 5y \\sqrt[6]{yz^4} \\)",
+      "\\( 2y\\sqrt[6]{yz^2} \\)",
+      "\\( 3y \\sqrt[6]{yz} \\)",
+      "\\( 2y\\sqrt[6]{y^2z} \\)",
     ],
-    answer: 3, 
+    answer: 1,
   },
   {
     question: "Simplify \\( \\sqrt[3]{-250x^7z^{25}} \\)",
@@ -242,17 +242,17 @@ const questions = [
       "\\( -5xz \\sqrt[3]{3xz} \\)",
       "\\( -10x^3z^2 \\sqrt[3]{2xz} \\)",
     ],
-    answer: 0, 
+    answer: 0,
   },
   {
-    question: "Simplify \\( (\\sqrt[4]{x^3})^2 * \\sqrt[8]{x}\\)",
+    question: "Simplify \\( \\sqrt[4]{162} + 4\\sqrt[4]{32}\\)",
     options: [
-      "\\( \\sqrt[8]{x^{13}} \\)",
-      "\\( \\sqrt[8]{x^6} \\)",
-      "\\(  \\sqrt[8]{x^{14}} \\)",
-      "\\( \\sqrt[8]{x^{10}} \\)",
+      "\\( 11\\sqrt[4]{2} \\)",
+      "\\( 2\\sqrt[4]{2} \\)",
+      "\\( 8\\sqrt[4]{5} \\)",
+      "\\( 10\\sqrt[4]{3} \\)",
     ],
-    answer: 0, 
+    answer: 0,
   },
 ];
 

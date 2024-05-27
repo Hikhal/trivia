@@ -214,46 +214,85 @@
 // ];
 
 const questions = [
+  
   {
-    question: "Simplify \\( (\\sqrt{5} + 3) * (\\sqrt{5} - 2) \\)",
+    question: "Find the equation in slope-intercept form, of the line perpendicular to \\( y = 3x + 4 \\) passing through \\((-1,2) \\)",
     options: [
-      "\\( -1 +  \\sqrt{5} \\)",
-      "\\( 1 +  \\sqrt{6} \\)",
-      "\\( 2 +  \\sqrt{3} \\)",
-      "\\( 4 +  \\sqrt{8} \\)",
+      "\\( y = -\\frac{1x}{3} - \\frac{5}{3} \\)",
+      "\\(  y = \\frac{1x}{3} - \\frac{5}{3} \\)",
+      "\\(  y = -3x + \\frac{5}{3} \\)",
+      "\\(  y = -\\frac{1x}{5} - \\frac{5}{20} \\)",
     ],
     answer: 0,
   },
+
   {
-    question: "Simplify \\( \\frac{\\sqrt[6]{192y^8z^{13}}}{\\sqrt[6]{3yz^{11}}} \\)",
+    question: "Find the equation of the vertical line passing through \\((-3,8) \\)",
     options: [
-      "\\( 5y \\sqrt[6]{yz^4} \\)",
-      "\\( 2y\\sqrt[6]{yz^2} \\)",
-      "\\( 3y \\sqrt[6]{yz} \\)",
-      "\\( 2y\\sqrt[6]{y^2z} \\)",
+      "\\( x = -3 \\)",
+      "\\( y = -3 \\)",
+      "\\( x = 8\\)",
+      "\\( y = 8\\)",
+    ],
+    answer: 0,
+  },
+
+
+  {
+    question: "Find the equation of the line, with a slope of 0, passing through \\((2,-6) \\)",
+    options: [
+      "\\( x = 2 \\)",
+      "\\( y = -6 \\)",
+      "\\( x = -6\\)",
+      "\\( y = 2\\)",
     ],
     answer: 1,
   },
+
   {
-    question: "Simplify \\( \\sqrt[3]{-250x^7z^{25}} \\)",
+    question: "Find the equation in slope-intercept form, of the line passing through \\((-1,6) \\) and \\((10,-2) \\)",
     options: [
-      "\\( -5x^2z^8 \\sqrt[3]{2xz} \\)",
-      "\\( -10x^3z^7 \\sqrt[3]{3xz^2} \\)",
-      "\\( -5xz \\sqrt[3]{3xz} \\)",
-      "\\( -10x^3z^2 \\sqrt[3]{2xz} \\)",
+      "\\( y = -\\frac{8x}{11} + \\frac{58}{11} \\)",
+      "\\(  y = \\frac{11x}{8} + \\frac{58}{11} \\)",
+      "\\(  y = -8x + \\frac{58}{11} \\)",
+      "\\(  y = -\\frac{1x}{8} - \\frac{5}{20} \\)",
     ],
-    answer: 0,
+    answer: 0
   },
+
   {
-    question: "Simplify \\( \\sqrt[4]{162} + 4\\sqrt[4]{32}\\)",
+    question: "Find the center and radius of the circle given by \\(x^2 + y^2 -6y - 9 = 0 \\)",
     options: [
-      "\\( 11\\sqrt[4]{2} \\)",
-      "\\( 2\\sqrt[4]{2} \\)",
-      "\\( 8\\sqrt[4]{5} \\)",
-      "\\( 10\\sqrt[4]{3} \\)",
+      "\\( Center = (0,3),  r = 3\\sqrt{2} \\)",
+      "\\( Center = (3,1),  r = 3\\sqrt{15} \\)",
+      "\\( Center = (3,0), r = 3\\sqrt{11} \\)",
+      "\\(Center = (0,3), r = \\sqrt{2} \\)",
     ],
-    answer: 0,
+    answer: 0
   },
+
+  {
+    question: "Find the center and radius of the circle given by \\(x^2 + y^2 + 6x -4y + 9 = 0 \\)",
+    options: [
+      "\\(Center = (-3,2),  r = \\sqrt{2} \\)",
+      "\\(Center = (-3,2),  r = 2 \\)",
+      "\\(Center = (3,2),   r = 3 \\)",
+      "\\(Center = (2,3),   r = \\sqrt{8} \\)",
+    ],
+    answer: 1
+  },
+
+
+
+
+
+
+
+
+
+
+
+
 ];
 
 export default questions;

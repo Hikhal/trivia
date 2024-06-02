@@ -1,15 +1,21 @@
 const questions = [
   {
     question:
-      "Evaluate the expression \\( 3x - y(3y^2-x) \\) if x = -2 and y = 4",
-    options: ["-206", "-121", "207", "-126"],
+      "Evaluate the expression \\( \\frac{x^2 + y - 2}{y^2 - 5z} \\) if x = 3  y = 2 and z = 4",
+    options: ["\\(-\\frac{9}{16} \\)", "-9", "16", "\\(\\frac{16}{9}\\)"],
     answer: 0,
   },
 
   {
-    question: "Factorize \\( 3x^2 + 17x - 28 \\)?",
-    options: ["(2x+1)(3x-1)", "(3x-4)(x+7)", "(3x+7)(x-4)", "(3x+2)(10x+1)"],
-    answer: 1,
+    question:
+      "Simplify \\( \\frac{9x^2-16}{3x^2 + 17x - 28} \\div \\frac{3x^2 - 2x - 8}{x^2 + 5x - 14} \\)",
+    options: [
+      "\\( 1 \\)",
+      "\\( \\frac{2x - 3}{(3x - 2)(x - 3)} \\)",
+      "\\( \\frac{-4}{x(3x + 2)} \\)",
+      "\\( \\frac{3x - 2}{(x - 3)(3x^2 - 11x + 6)} \\)",
+    ],
+    answer: 0,
   },
 
   {
@@ -18,28 +24,24 @@ const questions = [
       "\\( xy(x+3)(x^3 - 4x + 64) \\)",
       "\\( xy(x+4)(x^3 - 4x - 16) \\)",
       "\\( x^2y(x+3)(x^3 + 4x + 12) \\)",
-      "\\( xy^4(x+3)(x^3 + 4x + 16) \\)",
+      "\\( xy^4(x+3)(x^3 - 4x + 16) \\)",
     ],
-    answer: 1,
+    answer: 3,
   },
   {
-    question: "Factorize \\( 20x^2 - 24xy - 25xy + 30y^2 \\)?",
-    options: [
-      "(4x+6)(3x-2)",
-      "(5x-6y)(4x-5y)",
-      "(3x+7)(2x-4)",
-      "(5x+6y)(4x-5y)",
-    ],
-    answer: 1,
+    question:
+      "Which one of the options is a factor of:  \\( 2x^3 - x^2 + 14x - 7 \\)?",
+    options: ["\\(2x - 2\\)", "\\(2x + 1\\)", "\\(x^2 + 7\\)", "\\(x^2 - 2\\)"],
+    answer: 2,
   },
 
   {
-    question: "Simplify \\( \\frac{9}{2x - 7} + \\frac{3}{7 - 2x} \\)",
+    question: "\\( (-4x^2 + 8x - 1) - (-5x^2 + 6x - 7) \\)",
     options: [
-      "\\( \\frac{6}{(2x - 7)} \\)",
-      "\\( \\frac{-6}{(2x + 7)} \\)",
-      "\\( \\frac{3}{(2x - 28)} \\)",
-      "\\( \\frac{6}{(3x + 7)} \\)",
+      "\\( x^2 + 2x + 6 \\)",
+      "\\( x^2 + 6x + 2\\)",
+      "\\( x^2 - 10x + 9\\)",
+      "\\( x^2 + 2\\)",
     ],
     answer: 0, // The correct answer is \\( \\frac{3x^2 - 14x - 2}{(3x - 2)(3x + 4)(x - 3)} \\)
   },
@@ -56,35 +58,15 @@ const questions = [
   },
 
   {
-    question: "Factorize \\( 6x^2 + 17x + 12 \\)",
+    question:
+      "Simplify the expression: \\[ \\left( \\frac{2x^3y^{-3}}{x^{-2}y^5} \\right)^{-3} \\]",
     options: [
-      "\\((3x - 1)(4x - 2)\\)",
-      "\\((3x + 4)(2x + 3)\\)",
-      "\\((3x - 1)(6x - 2)\\)",
-      "\\((4x + 3)(x - 2)\\)",
+      "\\( \\frac{2^{-3}x^{-15}y^{24}}{1} \\)",
+      "\\( 8x^{-15}y^{24} \\)",
+      "\\( \\frac{y^{24}}{8x^{15}} \\)",
+      "\\( 8x^{15}y^{-24} \\)",
     ],
-    answer: 1, // The correct factorization is \\((3x - 2)(4x - 1)\\)
-  },
-
-  {
-    question: "Factor completely \\( 6xy - 14y - 15x - 35 \\)",
-    options: [
-      "\\((6x - 5)(y - 7)\\)",
-      "\\((2x + 7)(3y - 5)\\)",
-      "\\((3x - 5)(2y + 7)\\)",
-      "\\((3x + 7)(2y - 5)\\)",
-    ],
-    answer: 3, // The correct factorization is \\((3x + 7)(2y - 5)\\)
-  },
-  {
-    question: "Simplify \\( \\frac{\\frac{2}{y} + 7y}{y + \\frac{3}{y}} \\)",
-    options: [
-      "\\( \\frac{2 + 7y^2}{y^2 + 4} \\)",
-      "\\( \\frac{2y^2 + 7y^3}{y^2 + 3} \\)",
-      "\\( \\frac{2 + 7y^2}{y^5 + 3} \\)",
-      "\\( \\frac{2y^2 + 7y^3}{y + 3} \\)",
-    ],
-    answer: 0,
+    answer: 2, // The correct answer is \\( 8x^{15}y^{-24} \\)
   },
   {
     question:
@@ -133,9 +115,9 @@ const questions = [
   },
   {
     question:
-      "Find the equation in slope-intercept form, of the line perpendicular to \\( y = 3x + 4 \\) passing through \\((-1,2) \\)",
+      "Find the equation in slope-intercept form, of the line perpendicular to \\( y = 5x - 2 \\) passing through \\((-2,3) \\)",
     options: [
-      "\\( y = -\\frac{1x}{3} - \\frac{5}{3} \\)",
+      "\\( y = -\\frac{1x}{5} + \\frac{13}{5} \\)",
       "\\(  y = \\frac{1x}{3} - \\frac{5}{3} \\)",
       "\\(  y = -3x + \\frac{5}{3} \\)",
       "\\(  y = -\\frac{1x}{5} - \\frac{5}{20} \\)",
@@ -144,70 +126,70 @@ const questions = [
   },
   {
     question:
-      "Find the equation in slope-intercept form, of the line passing through \\((-1,6) \\) and \\((10,-2) \\)",
+      "Find the equation in slope-intercept form, of the line passing through \\((2,-4) \\) and \\((4,6) \\)",
     options: [
       "\\( y = -\\frac{8x}{11} + \\frac{58}{11} \\)",
       "\\(  y = \\frac{11x}{8} + \\frac{58}{11} \\)",
-      "\\(  y = -8x + \\frac{58}{11} \\)",
+      "\\(  y = 5x - 14 \\)",
       "\\(  y = -\\frac{1x}{8} - \\frac{5}{20} \\)",
     ],
-    answer: 0,
+    answer: 2,
   },
 
   {
     question:
-      "Find the center and radius of the circle given by \\(x^2 + y^2 -6y - 9 = 0 \\)",
+      "Find the center and radius of the circle given by \\(x^2 + y^2 +6x - 4y + 9 = 0 \\)",
     options: [
-      "\\( Center = (0,3),  r = 3\\sqrt{2} \\)",
-      "\\( Center = (3,1),  r = 3\\sqrt{15} \\)",
-      "\\( Center = (3,0), r = 3\\sqrt{11} \\)",
-      "\\(Center = (0,3), r = \\sqrt{2} \\)",
+      "\\( Center = (1,2),  r = 7 \\)",
+      "\\( Center = (2,1),  r = 49 \\)",
+      "\\( Center = (-3,2), r = 2 \\)",
+      "\\(Center = (2,-1), r = \\sqrt{7} \\)",
     ],
-    answer: 0,
+    answer: 2,
   },
 
   {
     question:
-      "Find the center and radius of the circle given by \\(x^2 + y^2 + 6x -4y + 9 = 0 \\)",
+      "Find the center and radius of the circle  \\((x-4)^2 + (y - 3)^2  = 25 \\)",
     options: [
       "\\(Center = (-3,2),  r = \\sqrt{2} \\)",
       "\\(Center = (-3,2),  r = 2 \\)",
-      "\\(Center = (3,2),   r = 3 \\)",
+      "\\(Center = (4,3),   r = 5 \\)",
       "\\(Center = (2,3),   r = \\sqrt{8} \\)",
     ],
-    answer: 1,
+    answer: 2,
   },
 
   {
-    question: "Simplify \\( \\sqrt{72x^3y^5} \\)",
+    question: "Simplify \\( \\sqrt{125x^7y^8} \\)",
     options: [
-      "\\( 6x \\sqrt{2xy^5} \\)",
-      "\\( 6xy^2 \\sqrt{2xy} \\)",
-      "\\( 6xy \\sqrt{2xy^3} \\)",
-      "\\( 6x \\sqrt{2x^2y^5} \\)",
+      "\\( 5x^3y^4\\sqrt{5x} \\)",
+      "\\( 5xy^2 \\sqrt{5x^2y} \\)",
+      "\\( 5xy \\sqrt{2xy^3} \\)",
+      "\\( 5x \\sqrt{2x^2y^5} \\)",
     ],
-    answer: 1, // The correct answer is \\( 6xy^2 \\sqrt{2xy} \\)
+    answer: 0, // The correct answer is \\( 6xy^2 \\sqrt{2xy} \\)
   },
   {
-    question: "Simplify \\( \\sqrt[3]{108a^2b^7} \\)",
+    question: "Simplify \\( \\sqrt[3]{-250x^7z^25} \\)",
     options: [
-      "\\( 3a^2b^2 \\sqrt[3]{4ab} \\)",
-      "\\( 6ab^3 \\sqrt[3]{3b} \\)",
-      "\\( 3ab^2 \\sqrt[3]{4a^2b} \\)",
-      "\\( 6a \\sqrt[3]{3a^2b^7} \\)",
+      "\\( -5x^2z^8 \\sqrt[3]{2xz} \\)",
+      "\\(-5x^2z^4 \\sqrt[3]{2xz^4}  \\)",
+      "\\( -5xz^8 \\sqrt[3]{2xz}  \\)",
+      "\\( -5x^2z \\sqrt[3]{2xz}  \\)",
     ],
     answer: 0, // The correct answer is \\( 3a^2b^2 \\sqrt[3]{4ab} \\)
   },
 
   {
-    question: "Simplify \\( \\sqrt[3]{54n^5} - \\sqrt[3]{16n^5} \\)",
+    question: "Simplify \\( (a^{-5}b^{15})^-\\frac{4}{5} \\)",
     options: [
-      "\\( 6n \\sqrt[3]{3n^4} \\)",
-      "\\( 6n \\sqrt[3]{3n^4} \\)",
-      "\\( n \\sqrt[3]{2n^2} \\)",
-      "\\( n \\sqrt[3]{2n^4} \\)",
+      "\\(  \\frac{a^4}{b^{12}}\\)",
+      "\\(\\frac{a^6}{b^{13}} \\)",
+      "\\(  \\frac{a^12}{b^{6}} \\)",
+      "\\(\\frac{a^2}{b^{3}} \\)",
     ],
-    answer: 2,
+    answer: 0,
   },
 
   {
@@ -222,12 +204,12 @@ const questions = [
   },
 
   {
-    question: "Simplify \\( (\\sqrt[4]{x^3})^2 * \\sqrt[8]{x}\\)",
+    question: "Simplify \\( \\sqrt[6]{y^2} * \\sqrt{y}\\)",
     options: [
-      "\\( \\sqrt[8]{x^{13}} \\)",
-      "\\( \\sqrt[8]{x^6} \\)",
-      "\\(  \\sqrt[8]{x^{14}} \\)",
-      "\\( \\sqrt[8]{x^{10}} \\)",
+      "\\( \\sqrt[6]{y^5} \\)",
+      "\\( \\sqrt[6]{y^6} \\)",
+      "\\(  \\sqrt[6]{y^{14}} \\)",
+      "\\( \\sqrt[6]{y^{10}} \\)",
     ],
     answer: 0,
   },
@@ -245,20 +227,20 @@ const questions = [
 
   {
     question:
-      "Simplify \\( \\frac{\\sqrt[6]{192y^8z^{13}}}{\\sqrt[6]{3yz^{11}}} \\)",
+      "Simplify \\( \\frac{\\sqrt[6]{190y^8z^{13}}}{\\sqrt[6]{5yz^{11}}} \\)",
     options: [
-      "\\( 5y \\sqrt[6]{yz^4} \\)",
-      "\\( 2y\\sqrt[6]{yz^2} \\)",
+      "\\( 2y \\sqrt[6]{yz^4} \\)",
+      "\\( y\\sqrt[6]{38yz^2} \\)",
       "\\( 3y \\sqrt[6]{yz} \\)",
-      "\\( 2y\\sqrt[6]{y^2z} \\)",
+      "\\( 4y\\sqrt[6]{y^2z} \\)",
     ],
     answer: 1,
   },
 
   {
-    question: "Factorize \\( |3x - 2 | - 5 = 3 \\)",
+    question: "\\( 6|x + 5 | + 2 = 20 \\)",
     options: [
-      "\\(x =\\frac{10}{3}, x = -2\\)",
+      "\\(x = -2, x = -8\\)",
       "\\(x = -3, x = -2\\)",
       "\\(x >= - 2\\)",
       "\\(x = \\frac{2}{3}, x = 5\\)",
@@ -267,14 +249,14 @@ const questions = [
   },
 
   {
-    question: "Factorize \\( |2x - 1 | <= 9 \\)",
+    question: "\\( 4|5x - 2| \\leq 16 \\)",
     options: [
       "\\( (5, \\infty)\\)",
       "\\((-4,5)\\)",
-      "\\((-\\infty, -4) u [5, \\infty)\\)",
+      "\\((-\\infty, -6) u (4, \\infty)\\)",
       "\\([-4,5]\\)",
     ],
-    answer: 3, // The correct factorization is \\((2x + 3)(3x + 4)\\)
+    answer: 2, // The correct factorization is \\((2x + 3)(3x + 4)\\)
   },
 
   {
@@ -290,10 +272,10 @@ const questions = [
   },
   {
     question:
-      "What is the solution to the following system of equations? \\[ \\begin{cases} 3x - y = -1 \\\\ 2x - 4y = 9 \\end{cases} \\]",
+      "What is the solution to the following system of equations? \\[ \\begin{cases} 2x + 2y = 9 \\\\ 6x + 7y = 11 \\end{cases} \\]",
     options: [
       "\\( (-\\frac{13}{10}, -\\frac{29}{10}) \\)",
-      "\\( (\\frac{13}{10}, -\\frac{29}{10}) \\)",
+      "\\( (\\frac{41}{2}, -16) \\)",
       "\\( (-\\frac{14}{10}, -\\frac{31}{10}) \\)",
       "\\( (\\frac{19}{10}, -\\frac{9}{10}) \\)",
     ],
@@ -301,25 +283,25 @@ const questions = [
   },
   {
     question:
-      "What is the \\( x \\)-coordinate of the solution to the following system of equations? \\[ \\begin{cases} 3x - 7y = 6 \\\\ 2x + y = -19 \\end{cases} \\]",
+      "What is the \\( x \\)-coordinate of the solution to the following system of equations? \\[ \\begin{cases} 3x - 2y = 2 \\\\ 4x + 3y = 14 \\end{cases} \\]",
     options: [
-      "\\( -\\frac{127}{17} \\)",
-      "\\( -\\frac{129}{13} \\)",
-      "\\( \\frac{123}{12} \\)",
-      "\\( \\frac{127}{14}\\)",
+      "\\( -4 \\)",
+      "\\( -3 \\)",
+      "\\( 2\\)",
+      "\\( 5\\)",
     ],
-    answer: 1, // Assuming the correct answer is -3
+    answer: 2, // Assuming the correct answer is -3
   },
   {
     question:
-      "Find the hypotenuse of a right triangle with legs \\( 5\\sqrt{2} \\) and 11.",
+      "Find the hypotenuse of a right triangle with legs \\( 2\\sqrt{10} \\) and 4.",
     options: [
-      "\\( 11\\sqrt{2} \\)",
-      "\\( \\sqrt{171} \\)",
-      "\\( \\sqrt{311} \\)",
+      "\\( 2\\sqrt{14} \\)",
+      "\\( 3\\sqrt{11} \\)",
+      "\\( 3\\sqrt{311} \\)",
       "\\( 11 \\)",
     ],
-    answer: 1, // The correct answer is \\( \\sqrt{311} \\)
+    answer: 0, // The correct answer is \\( \\sqrt{311} \\)
   },
   {
     question:
@@ -334,14 +316,15 @@ const questions = [
   },
 
   {
-    question: "Factorize \\( |3x + 2 | >= 8 \\)",
+    question:
+      "Find the equation in slope-intercept form, of the line passing through \\((4,-6) \\) and \\((2,6) \\)",
     options: [
-      "\\( (5, \\infty)\\)",
-      "\\((-4,5)\\)",
-      "\\((-\\infty, -\\frac{10}{3}] u [2, \\infty)\\)",
-      "\\([-4,5]\\)",
+      "\\( y = 4x + \\frac{58}{11} \\)",
+      "\\(  y = 2x + \\frac{58}{11} \\)",
+      "\\(  y = -6x + 18 \\)",
+      "\\(  y = -\\frac{1x}{8} - \\frac{5}{20} \\)",
     ],
-    answer: 3, // The correct factorization is \\((2x + 3)(3x + 4)\\)
+    answer: 2,
   },
 
   {
@@ -357,14 +340,14 @@ const questions = [
   },
   {
     question:
-      "Solve for \\( x \\): \\[ \\frac{x}{x - 5} - \\frac{5}{x + 5} = \\frac{10x}{x^2 - 25} \\]",
+      "By completing the square, one can demonstrate that the quadratic expression \\( x^2 + 6x - 72 = 0 \\) to solve.",
     options: [
-      "\\( x = - \\frac{7}{4} \\)",
-      "\\( x = -  \\frac{49}{4} \\)",
-      "\\( x =  \\frac{51}{4} \\)",
-      "\\( NO SOLUTION \\)",
+      "\\( x = 10, x = 4\\)",
+      "\\( x = 8, x = -2\\)",
+      "\\( x = 7, x = 3 \\)",
+      "\\( x = 1, x = 5\\)",
     ],
-    answer: 3, // Assuming the correct answer is x = 5
+    answer: 0,
   },
 
   {
@@ -380,9 +363,9 @@ const questions = [
   },
   {
     question:
-      "Determine the remainder when \\( 2y^4 + 5y^3 - y + 6 \\) is divided by \\( y - 2 \\).",
-    options: ["\\( 30 \\)", "\\( 28 \\)", "\\( 76 \\)", "\\( 34 \\)"],
-    answer: 2, // Assuming the correct answer is 32
+      "Determine the remainder when \\( x^3 + 2\\) is divided by \\( x - 1 \\).",
+    options: ["\\( 3 \\)", "\\( 2 \\)", "\\( 7 \\)", "\\( 4 \\)"],
+    answer: 0, // Assuming the correct answer is 32
   },
 
   {
@@ -410,14 +393,14 @@ const questions = [
 
   {
     question:
-      "Rationalize the denominator: \\[ \\frac{2 + \\sqrt{3}}{1 + \\sqrt{3}} \\]",
+      "Rationalize the denominator: \\[ \\frac{\\sqrt{3} + \\sqrt{5}}{\\sqrt{3} - \\sqrt{5}} \\]",
     options: [
-      "\\( \\frac{2 - \\sqrt{3}}{1 - \\sqrt{3}} \\)",
-      "\\( \\frac{1 + \\sqrt{3}}{2} \\)",
-      "\\( \\frac{2\\sqrt{3} - 3}{2} \\)",
-      "\\( \\frac{1 + \\sqrt{3}}{-2} \\)",
+      "\\( -4 - \\sqrt{15} \\)",
+      "\\(4 - \\sqrt{152}  \\)",
+      "\\( 6 + \\sqrt{15}  \\)",
+      "\\( 3 + \\sqrt{17}  \\)",
     ],
-    answer: 2, // The correct answer is \\( \\frac{2\\sqrt{3} - 3}{2} \\)
+    answer: 0, // The correct answer is \\( \\frac{2\\sqrt{3} - 3}{2} \\)
   },
   {
     question:
@@ -430,6 +413,26 @@ const questions = [
     ],
     answer: 0, // The correct answer is \\( \\frac{2\\sqrt{5} + 2\\sqrt{3}}{5 - 9} \\)
   },
+  {
+    question: "Find the distance between \\( (4, -3) \\) and \\( (2, -7) \\).",
+    options: [
+      "\\( 2\\sqrt{5} \\)",
+      "\\( \\sqrt{22} \\)",
+      "\\( \\sqrt{23} \\)",
+      "\\( \\sqrt{25} \\)"
+    ],
+    answer: 0 // The correct answer is \\( \\sqrt{20} \\)
+  },
+  {
+    question: "Find the midpoint between \\( (-8, -6) \\) and \\( (7, -9) \\).",
+    options: [
+      "\\( (-\\frac{1}{2}, -\\frac{15}{2}) \\)",
+      "\\( (-\\frac{1}{2}, -\\frac{11}{2}) \\)",
+      "\\( (-\\frac{1}{3}, -\\frac{15}{2}) \\)",
+      "\\((-\\frac{1}{4}, -\\frac{15}{1}) \\)"
+    ],
+    answer: 0 // The correct answer is \\( (-0.5, -7.5) \\)
+  }
 ];
 
 export default questions;
